@@ -32,10 +32,13 @@ def getCollection(conf):
     elif engine.lower() == "sqlalchemy":
         from .sql_alchemy import Sqlalchemy
         return Sqlalchemy(conf)
+    elif engine.lower() == "logging":
+        from .logengine import LogEngine
+        return LogEngine(conf)
     else:
         try:
             parts = engine.split('.')
-            if len(parts) < 1: # engine must have at least module name and class
+            if len(parts) < 1:  # engine must have at least module name and class
                 raise ImportError
 
             module_name = '.'.join(parts[:-1])
@@ -53,6 +56,6 @@ def getCollection(conf):
         except ImportError:
             raise ValueError(
                 ("flask-profiler requires a valid storage engine but it is"
-                    " missing or wrong. provided engine: {}".format(engine)))
+                 " missing or wrong. provided engine: {}".format(engine)))
 
         return storage(conf)
