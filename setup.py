@@ -7,7 +7,7 @@ Flask Profiler
 Links
 `````
 
-* `development version <http://github.com/muatik/flask-profiler/>`
+* `development version <http://github.com/saivarunr/flask-profiler/>`
 
 """
 import sys
@@ -27,30 +27,17 @@ install_requires = [
 ]
 
 setup(
-    name='flask_profiler',
-    version='1.8',
-    url='https://github.com/muatik/flask-profiler',
+    name='flask_profiler_logger',
+    version='1.0',
+    url='https://github.com/saivarunr/flask-profiler',
     license=open('LICENSE').read(),
-    author='Mustafa Atik',
-    author_email='muatik@gmail.com',
+    author='Sai Varun Reddy Daram',
+    author_email='saivarunvishal@gmail.com',
     description='API endpoint profiler for Flask framework',
     keywords=[
         'profiler', 'flask', 'performance', 'optimization'
     ],
-    long_description=open('README.md').read(),
     packages=['flask_profiler'],
-    package_data={
-        'flask_profiler': [
-            'storage/*',
-            'static/dist/fonts/*',
-            'static/dist/css/*',
-            'static/dist/js/*',
-            'static/dist/images/*',
-            'static/dist/js/*'
-            'static/dist/*',
-            'static/dist/index.html',
-            ]
-        },
     test_suite="tests.suite",
     zip_safe=False,
     platforms='any',

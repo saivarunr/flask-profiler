@@ -97,7 +97,7 @@ def measure(f, name, method, context=None):
             raise Exception(
                 "if sampling_function is provided to flask-profiler via config, "
                 "it must be callable, refer to: "
-                "https://github.com/muatik/flask-profiler#sampling")
+                "https://github.com/saivarunr/flask-profiler#sampling")
 
         if 'sampling_function' in CONF and not CONF['sampling_function']():
             return f(*args, **kwargs)
@@ -253,7 +253,7 @@ def init_app(app):
             raise Exception(
                 "to init flask-profiler, provide "
                 "required config through flask app's config. please refer: "
-                "https://github.com/muatik/flask-profiler")
+                "https://github.com/saivarunr/flask-profiler")
 
     if not CONF.get("enabled", False):
         return

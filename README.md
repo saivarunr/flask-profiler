@@ -1,7 +1,7 @@
 # Flask-profiler
 
 
-**version: 1.8** [![Build Status](https://travis-ci.org/muatik/flask-profiler.svg?branch=master)](https://travis-ci.org/muatik/flask-profiler)
+**version: 1.8** [![Build Status](https://travis-ci.org/saivarunr/flask-profiler.svg?branch=master)](https://travis-ci.org/saivarunr/flask-profiler)
 
 ##### Flask-profiler measures endpoints defined in your flask application; and provides you fine-grained report through a web interface.
 
@@ -277,14 +277,14 @@ app.config["flask_profiler"] = {
 
 Contributions are welcome!
 
-Review the [Contributing Guidelines](https://github.com/muatik/flask-profiler/wiki/Development) for details on how to:
+Review the [Contributing Guidelines](https://github.com/saivarunr/flask-profiler/wiki/Development) for details on how to:
 
 * Submit issues
 * Add solutions to existing challenges
 * Add new challenges
 
 ## Authors
-* [Musafa Atik](https://www.linkedin.com/in/muatik)
+* [Musafa Atik](https://www.linkedin.com/in/saivarunr)
 * Fatih Sucu
 * [Safa Yasin Yildirim](https://www.linkedin.com/in/safayasinyildirim)
 
